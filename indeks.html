@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mountain escape</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link href="./src/css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    </head>
+    <body>
+        <header>
+            <div id="menu-bar" class="fas fa-bars"></div>
+                <a href="" class="logo" title="mountain escape"><span>M</span>ountain escape</a>
+                <nav class="navbar">
+                    <a href="#home" title="home">Home</a>
+                    <a href="#book" title="book">Book</a>
+                    <a href="#explore" title="explore">Explore</a>
+                    <a href="#gallery" title="gallery">Gallery</a>
+                    <a href="#review" title="review">Review</a>
+                    <a href="#contact" title="contact">Contact</a>
+                </nav>
+                <div class="icons">
+                    <i class="fas fa-search" id="search-btn"></i>
+                    <i class="fas fa-user" id="login-btn"></i>
+                </div>
+                <form action="" class="search-bar-container">
+                    <input type="search" id="search-bar" placeholder="Search here...">
+                    <label for="search-bar" class="fas fa-search"></label>
+                </form>
+        </header>
+        <div class="login-form-container">
+            <i class="fa fa-times" id="form-close"></i>
+            <form action="">
+                <h3>login</h3>
+                <input type="email" class="box" placeholder="enter your email">
+                <input type="password" class="box" placeholder="enter your password">
+                <input type="submit" value="login now" class="btn">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+                <p> forget password? <a href="#">Click here</a></p>
+                <p> Don't have an account? <a href="#">Register now</a></p>
+            </form>
+        </div>
+        <section class="home" id="home">
+            <div class="content">
+                <h3>Adventures is worthwhile</h3>
+                <p> Discover new mountains with us, adventure awaits</p>
+                <a href="#" class="btn" title="Discover more">Discover more</a>
+            </div>
+            <div class="controls">
+                <span class="vid-btn active" data-src="./videos/vid1.mp4"></span>
+                <span class="vid-btn" data-src="./videos/vid2.mp4"></span>
+                <span class="vid-btn" data-src="./videos/vid3.mp4"></span>
+                <span class="vid-btn" data-src="./videos/vid4.mp4"></span>
+                <span class="vid-btn" data-src="./videos/vid5.mp4"></span>
+            </div>
+            <div class="video-container">
+                <video src="./videos/vid1.mp4" id="video-slider" loop autoplay muted></video>
+            </div>
+        </section>
+        <section class="book" id="book">
+            <h1 class="heading">
+                <span>B</span>
+                <span>o</span>
+                <span>o</span>
+                <span>k</span>
+            </h1>
+            <div class="row">
+                <div class="image">
+                    <img src="./images/map.svg" alt="Animation picture explore">
+                </div>
+                <form>
+                    <div class="inputBox">
+                        <h3>Where to</h3>
+                        <input type="text" placeholder="place name">
+                    </div>
+                    <div class="inputBox">
+                        <h3>How many</h3>
+                        <input type="number" placeholder="Number of people">
+                    </div>
+                    <div class="inputBox">
+                        <h3>arrivals</h3>
+                        <input type="date">
+                    </div>
+                    <div class="inputBox">
+                        <h3>leaving</h3>
+                        <input type="date">
+                    </div>
+                    <input type="submit" class="btn" value="book now">
+                </form>
+            </div>
+        </section>
+        <section class="explore" id="explore">
+            <h1 class="heading">
+                <span>E</span>
+                <span>x</span>
+                <span>p</span>
+                <span>l</span>
+                <span>o</span>
+                <span>r</span>
+                <span>e</span>
+                <span> </span>
+                <span>N</span>
+                <span>o</span>
+                <span>w</span>
+            </h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="./images/Peru.jpg" alt="Inca Trail">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>Inca Trail, Peru</h3>
+                        <p>The legendary Inca Trail to the Lost City of the Incas in Peru is one of the world’s best known hiking adventures.</p>
+                        <div class="price"> 90.00€</div>
+                        <a href="#" class="btn" title="book now">Book now</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/nepal.jpg" alt="Annapurna Circuit">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>Annapurna Circuit, Nepal</h3>
+                        <p>The Annapurna Circuit Trek is a true classic in Nepal. Find here your itinerary, cost, map, best season, and more tips for your Annapurna Trail Trekking.</p>
+                        <div class="price"> 120.00€</div>
+                        <a href="#" class="btn" title="book now">Book now</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/tanzania.jpg" alt="Kilimanjaro">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>Kilimanjaro, Tanzania</h3>
+                        <p>Mount Kilimanjaro is a dormant volcano in Tanzania. It has three volcanic cones: Kibo, Mawenzi, and Shira. It is the highest mountain in Africa and the highest single free-standing mountain above sea level .</p>
+                        <div class="price"> 150.00€</div>
+                        <a href="#" class="btn" title="book now">Book now</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/zeland.jpg" alt="Milford Track">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>Milford Track, New Zealand</h3>
+                        <p>New Zealand's most famous walk, the Milford Track has been thrilling hikers for more than 150 years. The alpine and fiord scenery is as perfect as ever.</p>
+                        <div class="price"> 200.00€</div>
+                        <a href="#" class="btn" title="book now">Book now</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/greece.jpg" alt="Samaria Gorge mountain">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>Samaria Gorge, Greece</h3>
+                        <p>Samaria Gorge cuts through the rugged White Mountains of Crete, running 10 miles in length and ending at the shores of the Mediterranean.</p>
+                        <div class="price"> 90.00€</div>
+                        <a href="#" class="btn" title="book now">Book now</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/italy.jpg" alt="Terre mountain">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>Cinque Terre Hike, Italy</h3>
+                        <p>There is over 120 km of trails along the Cinque Terre coast line with 48 hiking trails available.</p>
+                        <div class="price"> 30.00€</div>
+                        <a href="#" class="btn" title="book now">Book now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="gallery">
+            <h1 class="heading">
+                <span>G</span>
+                <span>a</span>
+                <span>l</span>
+                <span>l</span>
+                <span>e</span>
+                <span>r</span>
+                <span>y</span>
+            </h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="./images/seemore1.jpg" alt="Kirkjufell">
+                    <div class="content">
+                        <h3>Amazing places</h3>
+                        <p>This small mountain peak looks beautiful covered fully in lush greenery during the summers and with pure white ice and snow during the winters.</p>
+                        <a href="#" class="btn" title="see more">See more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/seemore2.jpg" alt="aoraki">
+                    <div class="content">
+                        <h3>Amazing places</h3>
+                        <p>It is a part of the popular Aoraki/Mt. Cook National Park and stands magnificently adorned with snow-capped peaks.</p>
+                        <a href="#" class="btn" title="see more">See more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/seemore3.jpg" alt="Himalayas">
+                    <div class="content">
+                        <h3>Amazing places</h3>
+                        <p>Literally translating into the abode of snow, the Himalayas are reckoned across the globe as one of the most beautiful mountains in the world. </p>
+                        <a href="#" class="btn" title="see more">See more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/seemore4.jpg" alt=" Castle Mountain">
+                    <div class="content">
+                        <h3>Amazing places</h3>
+                        <p>Being synonymous with surreal views, and diverse landscapes, mountaineering in Canada </p>
+                        <a href="#" class="btn" title="see more">See more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/seemore5.jpg" alt="bivouac">
+                    <div class="content">
+                        <h3>Amazing places</h3>
+                        <p>The most beautiful bivouac in the mountains in Slovenia: aesthetic and architectural surplus bivouac with three lodging modules.</p>
+                        <a href="#" class="btn" title="see more">See more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/seemore6.jpg" alt="Table Mountain">
+                    <div class="content">
+                        <h3>Amazing places</h3>
+                        <p>This is a unique mountain and its surface on top is literally flat. It is the smallest mountain in the list of mountains in the world at a height of just 3,600 ft.</p>
+                        <a href="#" class="btn" title="see more">See more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/seemore7.jpg" alt="Mount Everest">
+                    <div class="content">
+                        <h3>Amazing places</h3>
+                        <p>This highest mountain in the world offers amazing views and challenging climbing routes making it perfect for adventure seekers.</p>
+                        <a href="#" class="btn" title="see more">See more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/seemore8.jpg" alt="Cerro Torre">
+                    <div class="content">
+                        <h3>Amazing places</h3>
+                        <p>Cerro Torre it is counted among the most difficult mountains to climb as it has a very steep surface.</p>
+                        <a href="#" class="btn" title="see more">See more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/seemore9.jpg" alt="Swiss Alps ">
+                    <div class="content">
+                        <h3>Amazing places</h3>
+                        <p>The dramatic peaks of Dammastock and the snow-clad majestic summit of Matterhorn have always amazed and left hikers spellbound with its astonishing beauty. </p>
+                        <a href="#" class="btn" title="see more">See more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="review" id="review">
+            <h1 class="heading">
+                <span>R</span>
+                <span>e</span>
+                <span>v</span>
+                <span>i</span>
+                <span>e</span>
+                <span>w</span>
+                <span>s</span>
+            </h1>
+            <div>
+                <div class="swiper-container review-slider swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="box">
+                                <img src="./images/review1.jpg" alt="profile picture">
+                                <h3>Journey Havoc</h3>
+                                <p>This trip gave a really good insight into the history of Uzbekistan and the key role it played when the Silk Road was at its height. I loved the city tours where we visited some amazing monuments which our tour guide introduced us to in an interesting and informative way.</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box">
+                                <img src="./images/review2.png" alt="profile picture">
+                                <h3>Mishs Opatova</h3>
+                                <p>We had a great tour to the top of mount Toubkal, the view is stunning but the hike is more exhausting than we expected. After the Mountain part we got to know Abdullah, the driver who spent the next three days with us. He was super nice and we always felt save, beeing with him.</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box">
+                                <img src="./images/review3.jpg" alt="profile picture">
+                                <h3>Martina Ostwald</h3>
+                                <p>What a fantastic country with superb people. Nepal may be poor but its people and culture are rich. This trek is a chance to loose yourself in the remote areas of Nepal where few people travel. It provides a seamless transition from hot and humid valleys to the snowy wilderness of the high areas surrounding Dhaulagiri. Butterflies abound and raptors soar.</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box">
+                                <img src="./images/review4.jpg" alt="profile picture">
+                                <h3>Jochen Mayer</h3>
+                                <p>The views from the Kasbah are truly wonderful. The food is excellent. The staff are great.</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h1 class="heading">
+                <span>C</span>
+                <span>o</span>
+                <span>n</span>
+                <span>t</span>
+                <span>a</span>
+                <span>c</span>
+                <span>t</span>
+            </h1>
+            <div class="row">
+                <div class="image">
+                    <img src="./images/contact.jpg" alt="adventure bound">
+                </div>
+                <form action="">
+                    <div class="inputBox">
+                        <input type="text" placeholder="name">
+                        <input type="email" placeholder="email">
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" placeholder="number">
+                        <input type="text" placeholder="subject">
+                    </div>
+                    <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" class="btn" value="send message">
+                </form>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>About us</h3>
+                    <p>The 'Mountain escape' is part of the elite chain of agencies TUI Travelling Center whose offer that takes care of everybody’s wishes.Kind and professional consultants will ease your decision when you will be choosing your nature break.</p>
+                </div>
+                <div class="box">
+                    <h3>branch locations</h3>
+                    <a href="#" title="slovenia">Slovenia</a>
+                    <a href="#" title="austia">Austia</a>
+                    <a href="#" title="germany">Germany</a>
+                    <a href="#" title="italy">Italy</a>
+                </div>
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#" title="home">Home</a>
+                    <a href="#" title="book">Book</a>
+                    <a href="#" title="explore">Explore</a>
+                    <a href="#" title="gallery">Gallery</a>
+                    <a href="#" title="review">Review</a>
+                    <a href="#" title="contact">Contact</a>
+                </div>
+                <div class="box">
+                    <h3>Follow us</h3>
+                    <a href="#" title="facebook">Facebook</a>
+                    <a href="#" title="instagram">Instagram</a>
+                    <a href="#" title="twitter">Twitter</a>
+                    <a href="#" title="linkedin">Linkedin</a>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./src/js/script.js"></script>
+    </body>
+</html>
+
+
+
